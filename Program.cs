@@ -40,3 +40,19 @@ string[] SelectElements(string[] str)
     return selectedElements;
 }
 
+string Print(string[] prt)
+{
+    int length = prt.Length;
+    if (length == 0) return $"Нет удовлетворяющих условию строк. \n";
+    else
+    {
+        string result = String.Empty;
+        for (int i = 0; i < length; i++)
+        {
+            result += $"Строка {i + 1}: {prt[i]} \n";
+        }
+        return result;
+    }
+
+}
+
