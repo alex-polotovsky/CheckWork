@@ -43,7 +43,11 @@ string[] SelectElements(string[] str)
 string Print(string[] prt)
 {
     int length = prt.Length;
-    if (length == 0) return $"Нет удовлетворяющих условию строк. \n";
+    if (length == 0)
+    {
+        string result = "Нет удовлетворяющих условию строк. \n";
+        return result;
+    } 
     else
     {
         string result = String.Empty;
@@ -55,4 +59,11 @@ string Print(string[] prt)
     }
 
 }
+
+string[] words = new string[] { "мы", "все", "учились", "понемногу", "А.", "С.", "Пушкин" };
+string beginingArray = Print(words);
+Console.WriteLine(beginingArray);
+
+string resultArray = Print(SelectElements(words));
+Console.WriteLine(resultArray);
 
