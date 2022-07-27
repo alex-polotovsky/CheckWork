@@ -45,7 +45,7 @@ string Print(string[] prt)
     int length = prt.Length;
     if (length == 0)
     {
-        string result = "Нет удовлетворяющих условию строк. \n";
+        string result = "Массив не содержит элементов. \n";
         return result;
     } 
     else
